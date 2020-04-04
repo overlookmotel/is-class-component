@@ -1,6 +1,6 @@
 {
   "name": "is-class-component",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Determine if something is a React class component",
   "main": "index.js",
   "module": "es/index.js",
