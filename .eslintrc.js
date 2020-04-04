@@ -36,7 +36,8 @@ module.exports = {
 				'node/no-unsupported-features/es-syntax': ['error', {ignores: ['modules']}],
 				'node/no-missing-import': 'off',
 				'node/no-unpublished-import': 'off',
-				'import/no-unresolved': 'off'
+				'import/no-unresolved': 'off',
+				'import/extensions': 'off'
 			}
 		}
 	]
