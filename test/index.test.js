@@ -44,7 +44,37 @@ describe('returns `false` for', () => {
 		['object', {}],
 		['date', new Date()],
 		['null', null],
-		['undefined', undefined]
+		['undefined', undefined],
+		['React element from class component', (() => {
+			class Test extends React.Component { // eslint-disable-line react/prefer-stateless-function
+				render() {
+					return null;
+				}
+			}
+
+			return <Test />;
+		})()],
+		['React element from pure class component', (() => {
+			class Test extends React.PureComponent {
+				render() {
+					return null;
+				}
+			}
+
+			return <Test />;
+		})()],
+		['React element from function component', (() => {
+			function Test() {
+				return null;
+			}
+
+			return <Test />;
+		})()],
+		['React element from arrow function component', (() => {
+			const Test = () => null;
+
+			return <Test />;
+		})()]
 	])('%s', (name, input) => {
 		expect(isClassComponent(input)).toBeFalse();
 	});

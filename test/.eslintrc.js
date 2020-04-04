@@ -18,7 +18,8 @@ module.exports = {
 			'@overlookmotel/eslint-config-react'
 		],
 		rules: {
-			'node/no-unsupported-features/es-syntax': ['error', {ignores: ['modules']}]
+			'node/no-unsupported-features/es-syntax': ['error', {ignores: ['modules']}],
+			'react/jsx-filename-extension': 'off'
 		}
 	}]
 };
