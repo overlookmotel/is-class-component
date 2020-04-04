@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.0
+
+Docs:
+
+* README
+
 ## 1.0.1
 
 No code:
